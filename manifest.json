@@ -1,0 +1,21 @@
+{
+	"manifest_version":2,
+	"name":"Youtube Sense",
+	"version":"0.0.1",
+    "description":"Youtube customisation",
+		
+    "icons":{
+    	//"128": "images/tagsy128.png",
+        //"48": "images/tagsy48.png"
+	},
+	
+	"content_scripts":[{
+		"js":[
+			"js/app/content.js"		
+		],
+		"matches":[
+			"https://www.youtube.com/*"
+		],
+		"run_at":"document_end"
+	}]	
+}
